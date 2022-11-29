@@ -47,3 +47,9 @@ You can now use two new .withTracing() methods with Lambda parameters:
     <T> ReactiveConsumerWithTracing<T> withTracing(java.util.function.Consumer<T> origConsumer)
 
     <T, U> ReactiveFunctionWithTracing<T, U> withTracing(java.util.function.Function<T, U> origFunction)
+
+or if you are using rxjava3:
+
+    <T> Reactive3ConsumerWithTracing<T> withTracing(java.util.function.Consumer<T> origConsumer)
+
+    <T, U> Reactive3FunctionWithTracing<T, U> withTracing(java.util.function.Function<T, U> origFunction)
